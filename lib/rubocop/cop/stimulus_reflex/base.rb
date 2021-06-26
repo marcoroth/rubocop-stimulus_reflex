@@ -5,7 +5,6 @@ module RuboCop
     module StimulusReflex
       # @abstract parent class to StimulusReflex cops
       class Base < ::RuboCop::Cop::Base
-
         exclude_from_registry
 
         # Invoke the original inherited hook so our cops are recognized
