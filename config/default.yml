@@ -1,0 +1,6 @@
+---
+StimulusReflex:
+  Enabled: true
+  Include:
+    - "**/*_reflex.rb"
+    - "**/reflexes/**/*"

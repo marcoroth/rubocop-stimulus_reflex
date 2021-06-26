@@ -1,8 +1,6 @@
 # Rubocop::StimulusReflex
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/stimulus_reflex`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+StimulusReflex-specific analysis for your projects, as an extension to [RuboCop](https://github.com/rubocop/rubocop).
 
 ## Installation
 
@@ -14,15 +12,51 @@ gem 'rubocop-stimulus_reflex'
 
 And then execute:
 
-    $ bundle install
+```bash
+bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install rubocop-stimulus_reflex
+```bash
+gem install rubocop-stimulus_reflex
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+You need to tell RuboCop to load the StimulusReflex extension. There are threeways to do this:
+
+### RuboCop configuration file
+
+Put this into your `.rubocop.yml`.
+
+```yaml
+require: rubocop-stimulus_reflex
+```
+
+Alternatively, use the following array notation when specifying multiple extensions.
+
+```yaml
+require:
+  - rubocop-other-extension
+  - rubocop-stimulus_reflex
+```
+
+Now you can run `rubocop` and it will automatically load the RuboCop StimulusReflex cops together with the standard cops.
+
+### Command line
+
+```bash
+rubocop --require rubocop-stimulus_reflex
+```
+
+### Rake task
+
+```ruby
+RuboCop::RakeTask.new do |task|
+  task.requires << 'rubocop-stimulus_reflex'
+end
+```
 
 ## Development
 

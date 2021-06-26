@@ -16,3 +16,7 @@ Style/Documentation:
 
 Layout/LineLength:
   Max: 120
+
+Naming/FileName:
+  Exclude:
+    - lib/rubocop-stimulus_reflex.rb

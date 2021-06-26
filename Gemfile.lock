@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     rubocop-stimulus_reflex (0.1.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
 
 GEM
   remote: https://rubygems.org/
