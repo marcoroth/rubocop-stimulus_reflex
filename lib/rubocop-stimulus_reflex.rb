@@ -4,6 +4,7 @@ require "pathname"
 require "yaml"
 
 require "rubocop"
+require "rubocop-cable_ready"
 
 require_relative "rubocop/stimulus_reflex/version"
 require_relative "rubocop/stimulus_reflex/inject"
