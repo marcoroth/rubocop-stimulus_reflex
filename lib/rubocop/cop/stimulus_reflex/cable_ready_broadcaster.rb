@@ -18,7 +18,9 @@ module RuboCop
         def on_send(node)
           return unless node.method_name == :include
 
-          return unless node.ancestors.any? { |ancestor| cable_ready_broadcaster?(ancestor) && reflex_base_class?(ancestor) }
+          return unless node.ancestors.any? do |ancestor|
+                          cable_ready_broadcaster?(ancestor) && reflex_base_class?(ancestor)
+                        end
 
           add_offense(node)
         end
