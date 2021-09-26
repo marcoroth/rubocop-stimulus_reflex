@@ -20,3 +20,7 @@ Layout/LineLength:
 Naming/FileName:
   Exclude:
     - lib/rubocop-stimulus_reflex.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb

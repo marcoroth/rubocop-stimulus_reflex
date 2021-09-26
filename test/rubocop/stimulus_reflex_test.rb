@@ -2,10 +2,10 @@
 
 require "test_helper"
 
-module Rubocop
+module RuboCop
   class StimulusReflexTest < Minitest::Test
     def test_that_it_has_a_version_number
-      refute_nil ::Rubocop::StimulusReflex::VERSION
+      refute_nil ::RuboCop::StimulusReflex::VERSION
     end
   end
 end
