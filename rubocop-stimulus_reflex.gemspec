@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "rubocop-cable_ready", "~> 0.1"
 
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
 end
