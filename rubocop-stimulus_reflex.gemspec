@@ -4,7 +4,7 @@ require_relative "lib/rubocop/stimulus_reflex/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-stimulus_reflex"
-  spec.version       = Rubocop::StimulusReflex::VERSION
+  spec.version       = RuboCop::StimulusReflex::VERSION
   spec.authors       = ["Marco Roth"]
   spec.email         = ["marco.roth@hey.com"]
 
@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "rubocop-cable_ready", "~> 0.1"
 
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
 end
