@@ -4,7 +4,7 @@ module RuboCop
   module Cop
     module StimulusReflex
       class ReflexMethodNames < Base
-        NOT_RECOMMENED_METHOD_NAMES = [:send].freeze
+        NOT_RECOMMENED_METHOD_NAMES = %i[send puts inspect open].freeze
 
         def on_def(definition)
           name = definition.method_name
